@@ -35,9 +35,11 @@ public abstract class Fighter
     public bool LifeCheck => Health > 0;
 }
 
-public class Viking : Fighter
+public class Wizard
+ : Fighter
 {
-    public Viking(string name) :
+    public Wizard
+    (string name) :
    base(name, 100, 15)
     { }
 
@@ -47,9 +49,9 @@ public class Viking : Fighter
     }
 }
 
-public class Caveman : Fighter
+public class Warrior : Fighter
 {
-    public Caveman(string name) :
+    public Warrior(string name) :
    base(name, 120, 12)
     { }
 
