@@ -61,7 +61,10 @@ public class Caveman : Fighter
 
 public class BattleArena
 {
-    public Fighter Fight(Fighter player1, Fighter player2)
+    public Fighter player1 {get; set;}
+    public Fighter player2 {get; set;}
+    
+    public Fighter Fight()
     {
         Console.WriteLine($"THE BATTLE HAS BEGUN: {player1} VS {player2} ");
 
