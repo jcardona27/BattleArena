@@ -63,6 +63,14 @@ public class BattleArena
 {
     public Fighter player1 {get; set;}
     public Fighter player2 {get; set;}
+
+    public BattleArena(Fighter p1, Fighter p2)
+    {
+        player1 = p1;
+        player2 = p2;
+    }
+
+
     
     public Fighter Fight()
     {
